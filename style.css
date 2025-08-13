@@ -1,9 +1,44 @@
+/* ======= Reset básico e variáveis ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --corFundo: #ffffff;
+  --corTexto: #2b2b2b;
+  --textoSuave: #6b6b6b;
+  --corBorda: #e9e9e9;
+  --cinzaClaro: #f5f6f7;
+  --corPrimaria: #038f26;
+}
+
+body {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    Arial,
+    sans-serif;
+  color: var(--corTexto);
+  background: var(--corFundo);
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
 header {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background: rgb(252, 255, 253);
+  padding: 10px;
 
   img {
     height: 30px;
@@ -26,3 +61,92 @@ nav {
     color: black
   }
 }
+
+.container{
+  background: url(imagens/bolsa-wallpaper.jpg) no-repeat center center / cover ;
+  height: 540px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.texto{
+ display: flex;
+  flex-direction: column;
+  margin-left: -1000px;
+  margin-top:100px ;
+  
+  gap: 15px;
+
+  p{
+    width: 350px;
+  }
+  h1{
+    width: 50px;
+  }
+  button{
+    width: 150px;
+    height: 40px;
+    background: #038f26;
+    color: white;
+    border: 0;
+  }
+  
+}
+
+.bolsas{
+  display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    gap: 20px;
+
+}
+.bolsa{
+    width: 300px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    img{
+      width:  100%;
+    }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  background-color: #ededed;
+  margin-top: 10px;
+  p{
+    margin-top: 8px;
+  }
+  
+}
+
+.rodape2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    margin-top: 15px;
+  }
+}
+.centro{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+
+
+
